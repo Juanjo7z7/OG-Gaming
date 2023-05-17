@@ -30,6 +30,14 @@ def Perifericos():
 @app.route('/Perifericos.html') 
 def Perifericosimg(): 
     return render_template('public/Perifericos.html')
+
+@app.route('/Perifericos.html') 
+def Hardware(): 
+    return render_template('public/hardware.html')
+
+@app.route('/Perifericos.html') 
+def Hardwareimg(): 
+    return render_template('public/hardware.html')
 msg=""
 
 @app.route('/registroUsuario', methods=['GET', 'POST'])

@@ -19,5 +19,13 @@ function Perifericos() {
 }
 
 function Perifericosimg() {
-    window.location.href="/Perifericos.html"
+    window.location.href="/Perifericos.html";
+}
+
+function Hardware() {
+    window.location.href="/hardware.html";
+}
+
+function Hardwareimg() {
+    window.location.href="/hardware.html";
 }
