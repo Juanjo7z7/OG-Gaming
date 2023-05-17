@@ -31,13 +31,20 @@ def Perifericos():
 def Perifericosimg(): 
     return render_template('public/Perifericos.html')
 
-@app.route('/Perifericos.html') 
+@app.route('/hardware.html') 
 def Hardware(): 
     return render_template('public/hardware.html')
 
-@app.route('/Perifericos.html') 
+@app.route('/hardware.html') 
 def Hardwareimg(): 
     return render_template('public/hardware.html')
+
+@app.route("juegos.html")
+def juegos():
+    return render_template("public/juegos.html")
+@app.route("juegos.html")
+def juegosimg():
+    return render_template("public/juegos.html")
 msg=""
 
 @app.route('/registroUsuario', methods=['GET', 'POST'])

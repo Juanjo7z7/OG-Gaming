@@ -29,3 +29,11 @@ function Hardware() {
 function Hardwareimg() {
     window.location.href="/hardware.html";
 }
+
+function juegos() {
+    window.location.href="/juegos.html";
+}
+
+function juegosimg() {
+    window.location.href="/juegos.html";
+}
