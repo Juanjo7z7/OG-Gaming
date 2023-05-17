@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/juegos_Style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navtext">
+                <a href="#" onclick="inicio()">Inicio</a>
+                <a href="#" onclick="Perifericos()">Perifericos</a>
+                <a href="#" onclick="Hardware()">Hardware</a>
+                <a href="#" onclick="Sobre_nos()">Sobre nosotros</a>
+                <a href="#" onclick="login()"></a>
+            </div> 
+        </div>
+        <label for="" class="logo">
+        <a class="logo" href=""><img src="{{ url_for('static',filename='imgs/Logo.png')}}" alt="Logo"></a>
+        </label>
+    </nav>
+    <section class="Contenido">
+        <div class="ListaProductos">
+            <div class="oferta">
+
+<!-- Productos -->
+
+                <div class="producto">
+                                        <div class="foto-producto">
+                                            <img src="{{ url_for('static',filename='imgs/gtav.png')}}" alt="Productos">
+                                            <h3 class="NameProducto">Gta 5 Premium Online Edition Pc</h3>
+                                            <p class="descripcion">GTA 5 es un popular videojuego de mundo abierto donde los jugadores asumen el rol de criminales en una ciudad ficticia,
+                                                realizando misiones, actividades delictivas y explorando un amplio mapa lleno de acción y aventuras.</p>                      
+                                            <span class="precio">$85.000/COP</span>                            
+                                        </div>    
+                    </div>  
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/fifa23.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">EA SPORTS™ FIFA 23</h3>
+                                        <p class="descripcion">FIFA 23 (PC) es un popular videojuego de simulación de fútbol 
+                                            que ofrece una experiencia auténtica con equipos y jugadores reales, 
+                                            gráficos realistas y una amplia variedad de modos de juego.
+                                            </p>
+                                        <span class="precio">$128.500/COP</span>
+                                    </div>    
+                    </div>  
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/farcry6.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">Farcry 6</h3>
+                                        <p class="descripcion">Far Cry 6 es un aclamado videojuego de acción y aventura. Ambientado en una isla tropical ficticia llamada Yara,
+                                            los jugadores asumen el papel de un guerrillero que lucha contra el régimen opresivo del dictador Anton Castillo. El juego ofrece un mundo abierto,
+                                            combates intensos, una historia cautivadora y un entorno visualmente impresionante.</p>
+                                        <span class="precio">$277.900/COP</span>
+                                    </div>    
+                    </div>
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/stray.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">Stray</h3>
+                                        <p class="descripcion">Stray es un videojuego de aventuras donde encarnas a un gato callejero 
+                                        en una ciudad futurista llena de misterio y desafíos. 
+                                        Explora, resuelve puzzles y descubre secretos ocultos.</p>
+                                        <span class="precio">$135.250/COP</span>
+                                    </div>
+                    </div> 
+
+<!-- Fin Productos -->
+
+            </div>
+        </div>
+    </section>      
+</body>
+</html>

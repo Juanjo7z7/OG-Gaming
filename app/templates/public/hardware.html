@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Hardware_Style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navtext">
+                <a href="#" onclick="inicio()">Inicio</a>
+                <a href="#" onclick="juegos()">Juegos</a>
+                <a href="#" onclick="Perifericos()">Perifericos</a>
+                <a href="#" onclick="login()"></a>
+            </div> 
+        </div>
+        <label for="" class="logo">
+        <a class="logo" href=""><img src="{{ url_for('static',filename='imgs/Logo.png')}}" alt="Logo"></a>
+        </label>
+    </nav>
+    <section class="Contenido">
+        <div class="ListaProductos">
+            <div class="oferta">
+
+<!-- Productos -->
+
+                <div class="producto">
+                                        <div class="foto-producto">
+                                            <img src="{{ url_for('static',filename='imgs/Ram.png')}}" alt="Productos">
+                                            <h3 class="NameProducto">Ram 32GB 3200MHz RGB</h3>
+                                            <p class="descripcion">Capacidad: 32 GB
+                                                Frecuencia: 3200 MHz
+                                                Latencia: CL16
+                                                Tensión: 1,35 V
+                                                Garantía: 60 Meses.</p>                      
+                                            <span class="precio">$599.000/COP</span>                            
+                                        </div>    
+                    </div>  
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/board.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">Board Gigabyte B660m</h3>
+                                        <p class="descripcion">Plataforma: Intel
+                                            Capacidad máxima soportada de la memoria RAM: 128 GB
+                                            Chipsets: Intel
+                                            Socket: Lga1700
+                                            Ranuras de expansión: Pciexpressx16
+                                            Con procesador: No
+                                            CPU: 12va gen
+                                            Aplicaciones: PC
+                                            Tipo de memoria RAM: DDR4
+                                            Procesadores soportados: 12va gen intel core, Pentium gold, Celeron
+                                            Módulos de memoria RAM: 4
+                                            Formato de memoria RAM: DIMM
+                                            Factor de forma: mATX
+                                            Puertos SATA: 4
+                                            </p>
+                                        <span class="precio">$699.000/COP</span>
+                                    </div>    
+                    </div>  
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/capturadora.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">Capturadora Avermedia</h3>
+                                        <p class="descripcion">
+                                            La Avermedia Live Gamer Bolt GC555 es una capturadora de video de alta calidad y baja latencia,
+                                            con conectividad Thunderbolt 3 y soporte para resoluciones de hasta 4K a 60 fps. Permite capturar, grabar y transmitir contenido en vivo con facilidad.</p>
+                                        <span class="precio">$1.329.000/COP</span>
+                                    </div>    
+                    </div>
+                <div class="producto">
+                                    <div class="foto-producto">
+                                        <img src="{{ url_for('static',filename='imgs/ethernet.png')}}" alt="Productos">
+                                        <h3 class="NameProducto">Cable Ethernet</h3>
+                                        <p class="descripcion">Cable Ethernet UGREEN Cat 8 trenzado de alta velocidad 40 Gbps 2000 Mhz Cable de red Cat8 RJ45 blindados para interiores 
+                                            Cables LAN resistentes para interiores compatibles con PC para juegos</p>
+                                        <span class="precio">$113.900/COP</span>
+                                    </div>
+                    </div> 
+
+<!-- Fin Productos -->
+
+            </div>
+        </div>
+    </section>      
+</body>
+</html>

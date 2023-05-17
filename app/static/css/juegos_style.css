@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee';
+  font-family: 'Labrada', serif;
+  font-family: 'Titan One' ;
+}
+
+body {
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+    background-color: #000000;
+    height: 100px; 
+    display: flex;
+    position:top;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: #ffffff79;
+    text-decoration:none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+  
+  }
+  
+  .navbar a:hover {
+    color: #ffffff;
+  }
+
+  .logo {
+    position: absolute;
+    top: -23px;
+    left: 7px;
+  }
+
+  .navtext{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 220px;
+
+  }
+
+  .navtext a {
+    color: #ffffff79;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contenido {
+  position: center;
+  width: 500px;
+  margin: 40px\ auto;
+  display: flex;
+  padding-top: 90px;
+  margin-left: 730px;
+  margin-top: 30px;
+}
+
+.ListaProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: .5s ease;
+
+}
+
+.ListaProductos .oferta {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between 10px;
+
+}
+
+.ListaProductos .oferta .producto {
+  max-width: 210px;
+  padding: 30px;
+  height: 250px;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.ListaProductos .oferta .producto img {
+  width: 100%;
+}
+
+.ListaProductos .oferta .producto:hover {
+background-color: #969696ad;
+}
+
+.ListaProductos .oferta .producto .descripcion {
+  color: #ffffff
+}
+
+.ListaProductos .oferta .producto .precio {
+  color: #f85151;
+  font-size: 20px;
+}
+
+.ListaProductos .oferta .producto .NameProducto {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 26px;
+  padding-block: 15px;
+}
+
+.descripcion {
+      position: absolute;
+        top: 0;
+        left: 100%;
+        width: 300px;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        display: none;
+        z-index: 1;
+}
+
+.foto-producto:hover .descripcion {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(50px);
+}
+
+.producto {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.foto-producto {
+  position: relative;
+  width: 100%;
+}
+
+.foto-producto img {
+  width: 100%;
+  height: auto;
+}
+

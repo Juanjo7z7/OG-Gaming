@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/sobrenos_Style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navtext">
+                <a href="#" onclick="inicio()">Inicio</a>
+                <a href="#" onclick="Perifericos()">Perifericos</a>
+                <a href="#" onclick="juegos()">Juegos</a>
+                <a href="#" onclick="Hardware()">Hardware</a>
+                <a href="#" onclick="login()"></a>
+            </div> 
+        </div>
+        <label for="" class="logo">
+        <a class="logo" href=""><img src="{{ url_for('static',filename='imgs/Logo.png')}}" alt="Logo"></a>
+        </label>
+    </nav>
+    <section class="Contenido">
+        <div class="ListaProductos">
+            <div class="oferta">
+                <section class="presentacion">
+                    <h2>Bienvenido a OG Gaming</h2>
+                    <p>¡Bienvenido a OG Gaming, el paraíso de los gamers apasionados!</p>
+                    <p>Sumérgete en un mundo donde la adrenalina y la emoción se fusionan en cada pixel. En OG Gaming, nos enorgullece ofrecerte una selección única de artículos gaming que elevarán tu experiencia al siguiente nivel.</p>
+                    <p>Nuestro catálogo abarca desde periféricos de última generación hasta hardware de alto rendimiento, cables de máxima calidad y los videojuegos más emocionantes. Nos aseguramos de que cada producto en OG Gaming sea cuidadosamente seleccionado para satisfacer tus necesidades y superar tus expectativas.</p>
+                    <p>Descubre la precisión absoluta con nuestros teclados mecánicos, ratones de alta sensibilidad y auriculares envolventes. Potencia tu máquina de juego con nuestros procesadores, tarjetas gráficas y memorias RAM de vanguardia. Conecta tus dispositivos sin preocupaciones gracias a nuestros cables duraderos y confiables. Y, por supuesto, no olvides explorar nuestra colección de videojuegos, donde la diversión sin límites te espera.</p>
+                    <p>En OG Gaming, no solo ofrecemos productos excepcionales, sino también un servicio al cliente de primer nivel. Nuestro equipo de expertos está aquí para guiarte y brindarte asesoramiento personalizado para que encuentres exactamente lo que necesitas.</p>
+                    <p>Prepárate para sumergirte en una experiencia de juego inolvidable. Únete a nosotros en OG Gaming y descubre un mundo lleno de desafíos, aventuras y victorias épicas.</p>
+                    <p>¡Bienvenido a la familia OG Gaming, donde los sueños gamer se hacen realidad!</p>
+                    <a href="#" onclick="botonn()" class="btn">Explora nuestros productos</a>
+                </section>
+                
+                <footer>
+                    <p>&copy; 2023 OG Gaming. Todos los derechos reservados.</p>
+                </footer>
+</body>
+</html>

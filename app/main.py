@@ -15,10 +15,6 @@ def Registro_Contactanos():
 def Registro_Clientes(): 
     return render_template('public/Registro.html')
 
-@app.route('/aboutus.html') 
-def aboutus(): 
-    return render_template('public/aboutus.html')
-
 @app.route('/login.html') 
 def login(): 
     return render_template('public/login.html')
@@ -30,6 +26,27 @@ def Perifericos():
 @app.route('/Perifericos.html') 
 def Perifericosimg(): 
     return render_template('public/Perifericos.html')
+
+@app.route('/hardware.html') 
+def Hardware(): 
+    return render_template('public/hardware.html')
+
+@app.route('/hardware.html') 
+def Hardwareimg(): 
+    return render_template('public/hardware.html')
+
+@app.route("/juegos.html")
+def juegos():
+    return render_template("public/juegos.html")
+
+@app.route("/juegos.html")
+def juegosimg():
+    return render_template("public/juegos.html")
+
+@app.route("/sobrenos.html")
+def sobre_nos():
+    return render_template("public/sobrenos.html")
+
 msg=""
 
 @app.route('/registroUsuario', methods=['GET', 'POST'])

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee';
+  font-family: 'Labrada', serif;
+  font-family: 'Titan One' ;
+}
+
+body {
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+    background-color: #000000;
+    height: 100px; 
+    display: flex;
+    position:top;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: #ffffff79;
+    text-decoration:none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+  
+  }
+  
+  .navbar a:hover {
+    color: #ffffff;
+  }
+
+  .logo {
+    position: absolute;
+    top: -23px;
+    left: 7px;
+  }
+
+  .navtext{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 220px;
+
+  }
+
+  .navtext a {
+    color: #ffffff79;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+section.presentacion {
+  background-image: url("Logo.png");
+  background-size: cover;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+section.presentacion h2 {
+  font-size: 32px;
+}
+
+section.presentacion p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section.presentacion .btn {
+  background-color: #f00;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
