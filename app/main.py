@@ -126,13 +126,14 @@ def loginUser():
             cursor = conexion_MySQLdb.cursor(dictionary=True)
             cursor.execute("SELECT * FROM registro_usuario WHERE Email = %s AND Contrasena =%s",  [Email, Contrasena,])
             account = cursor.fetchone()
+            
             if account:
                     # Crear datos de sesión, para poder acceder a estos datos en otras rutas 
                     msg = "Ha iniciado sesión correctamente."
                     return render_template('public/pagina1.html', msjAlert = msg, typeAlert=1)                    
             else:
                     msg = 'Datos incorrectos, por favor verfique!'
-                    return render_template('public/Registro.html', msjAlert = msg, typeAlert=0)
+                    return render_template('public/login.html', msjAlert = msg, typeAlert=0)
 if __name__ == '__main__': 
     app.run(debug=True, port=666) 
 

@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
-  <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
-  <title>Mi Página Web</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap" rel="stylesheet">
-</head>
-<body>
-  
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
+<script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+<script src="{{ url_for('static',filename='js/custom_alert.js')}}"></script>
+{% block body %}
+ <div class="Alerta">
+  {% include 'public/alerts.html' %}
+ </div>
   <nav>
     <div class="navbar">
       <label for="" class="logo">
@@ -73,5 +66,6 @@
     <p>Contacto: <a href="mailto:oggaming.fresh420@gmail.com">oggaming.fresh420@gmail.com</a></p>
   </footer>
 
-</body>
-</html>
+
+{% endblock %}
+
