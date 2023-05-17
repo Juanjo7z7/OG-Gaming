@@ -37,3 +37,7 @@ function juegos() {
 function juegosimg() {
     window.location.href="/juegos.html";
 }
+
+function sobre_nos() {
+    window.location.href="/juegos.html";
+}

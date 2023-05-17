@@ -39,12 +39,18 @@ def Hardware():
 def Hardwareimg(): 
     return render_template('public/hardware.html')
 
-@app.route("juegos.html")
+@app.route("/juegos.html")
 def juegos():
     return render_template("public/juegos.html")
-@app.route("juegos.html")
+
+@app.route("/juegos.html")
 def juegosimg():
     return render_template("public/juegos.html")
+
+@app.route("/sobrenos.html")
+def sobre_nos():
+    return render_template("public/sobrenos.html")
+
 msg=""
 
 @app.route('/registroUsuario', methods=['GET', 'POST'])
