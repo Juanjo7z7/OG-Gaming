@@ -13,3 +13,11 @@ function inicio() {
 function login() {
     window.location.href="/login.html";
 }
+
+function Perifericos() {
+    window.location.href="/Perifericos.html";
+}
+
+function Perifericosimg() {
+    window.location.href="/Perifericos.html"
+}

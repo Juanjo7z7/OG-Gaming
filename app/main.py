@@ -31,6 +31,7 @@ def Perifericos():
 def Perifericosimg(): 
     return render_template('public/Perifericos.html')
 msg=""
+check_password_hash=False
 
 @app.route('/registroUsuario', methods=['GET', 'POST'])
 def registroUsuario():
@@ -40,7 +41,7 @@ def registroUsuario():
         Apellido             = request.form['Apellido']
         Telefono              = request.form['Telefono']
         Email         = request.form['Email']
-        Contrasena         = generate_password_hash (request.form['Contrasena'])
+        Contrasena         = generate_password_hash  (request.form['Contrasena' ],method='sha256')
         conexion_MySQLdb = connectionBD()
         cursor           = conexion_MySQLdb.cursor(dictionary=True)
         
@@ -126,11 +127,7 @@ def loginUser():
             cursor.execute("SELECT * FROM registro_usuario WHERE Email = %s ",  [Email])
             account = cursor.fetchone()
             if account:
-                    print(account["Contrasena"])
-                    print(generate_password_hash(Contrasena))
-                    print(Contrasena)
                     if check_password_hash(account['Contrasena'],Contrasena):
-                    # Crear datos de sesión, para poder acceder a estos datos en otras rutas 
                         msg = "Ha iniciado sesión correctamente."
                         return render_template('public/pagina1.html', msjAlert = msg, typeAlert=1)                    
                     else:
@@ -141,7 +138,7 @@ def loginUser():
                 msg="Usuario no encontrado "
                 
 if __name__ == '__main__': 
-    app.run(debug=True, port=5000) 
+    app.run(debug=True, port=666) 
 
 
 
