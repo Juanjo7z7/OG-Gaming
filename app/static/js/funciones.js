@@ -7,7 +7,7 @@ function Registro_Clientes() {
 }
 
 function inicio() {
-    window.location.href ="/pagina.html";
+    window.location.href ="/";
 }
 
 function login() {
