@@ -39,5 +39,5 @@ function juegosimg() {
 }
 
 function sobre_nos() {
-    window.location.href="/juegos.html";
+    window.location.href="/sobrenos.html";
 }
