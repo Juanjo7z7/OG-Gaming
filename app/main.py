@@ -15,10 +15,6 @@ def Registro_Contactanos():
 def Registro_Clientes(): 
     return render_template('public/Registro.html')
 
-@app.route('/aboutus.html') 
-def aboutus(): 
-    return render_template('public/aboutus.html')
-
 @app.route('/login.html') 
 def login(): 
     return render_template('public/login.html')

@@ -70,3 +70,36 @@ nav {
     transition: all 0.3s ease;
     text-align: center;
 }
+
+section.presentacion {
+  background-image: url("Logo.png");
+  background-size: cover;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+section.presentacion h2 {
+  font-size: 32px;
+}
+
+section.presentacion p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section.presentacion .btn {
+  background-color: #f00;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
