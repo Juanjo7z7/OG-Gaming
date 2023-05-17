@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap" rel="stylesheet">
+
+    <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+
+    <title></title>
+</head>
+<body>
+    <h1 class="eslogan">¡El poder de la victoria está en tus manos con nuestros productos gaming!</h1>
+    <p class="exp">Comienza tu experiencia con</p>
+    <img class="img" src="{{ url_for('static',filename='imgs/flecha.png')}}" alt="Look down">
+    <main>
+        <div style="text-align: center;">
+            <button class="boton" type="button" onclick="botonn()"><strong>OG Gaming</strong></button> 
+        </div>
+    </main>
+</body>
+</html>

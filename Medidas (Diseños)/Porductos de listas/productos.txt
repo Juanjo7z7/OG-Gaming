@@ -1,0 +1,3 @@
+400 X570
+400 pixeles de ancho
+570 pixeles de alto

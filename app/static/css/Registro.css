@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(48, 48, 48);
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  background-color: rgb(96, 125, 139);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+
+
+.card {
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+
+#formulario-registro {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(38, 50, 56);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#formulario-registro h2 {
+  color: #e03e3e;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#formulario-registro label {
+  color: #e03e3e;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#formulario-registro input[type="text"],
+#formulario-registro input[type="tel"],
+#formulario-registro input[type="email"],
+#formulario-registro input[type="password"],
+#formulario-registro textarea {
+  background-color: rgb(96, 125, 139);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#formulario-registro input[type="submit"] {
+  background-color: #e03e3e;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+

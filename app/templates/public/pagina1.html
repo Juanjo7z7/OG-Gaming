@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
+  <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+  <title>Mi Página Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <nav>
+    <div class="navbar">
+      <label for="" class="logo">
+          <a href=""><img src="{{ url_for('static',filename='imgs/OG.png')}}" alt="Logo"></a>
+      </label>
+      <div class="navtext">
+      <a href="#" onclick="inicio()">Inicio</a>
+      <a href="#" onclick="login()">Login</a>
+      <a href="#" onclick="Registro_Clientes()">Registro</a>
+    </div> 
+    </div>
+  </nav>
+  <div class="image-container">
+    <div class="image">
+      <a href="https://www.ejemplo.com/juegos"><img src="{{ url_for('static',filename='imgs/videojuegos.png')}}" alt="Videojuegos"></a>
+      <div class="capa">
+      <h2><strong>Juegos</strong></h2>
+    </div>
+    </div>
+    <div class="image">
+      <a href="https://www.ejemplo.com/perifericos"><img src="{{ url_for('static',filename='imgs/perifericos.png')}}" alt="Perifericos"></a>
+      <div class="capa">
+      <h2><strong>Perifericos</strong></h2>
+    </div>
+    </div>
+    {%%}
+    <div class="image">
+      <a href="https://www.ejemplo.com/hardware"><img src="{{ url_for('static',filename='imgs/hardware.png')}}" alt="Hardware"></a>
+      <div class="capa">
+      <h2><strong>Hardware y Cables</strong></h2>
+    </div>
+    </div>
+    <div class="image">
+      <a href="https://www.ejemplo.com/sobre-nosotros"><img src="{{ url_for('static',filename='imgs/quees.png')}}"  alt="¿Ques es OG Gaming?"></a>
+      
+      <div class="capa">
+      <h2><strong>Sobre nosotros</strong></h2>
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-wrapper">
+      <h2>Contáctanos</h2>
+      <form action="registrarForm" method="POST" name="" onsubmit="return Confirmacion()">
+        <label for="name">Nombre:</label>
+        <input class="text" id="name" name="Nombre">
+      
+        <label for="email">Correo electrónico:</label>
+        <input class="email" id="email" name="Email">
+      
+        <label for="message">Mensaje:</label>
+        <textarea class="message" name="Mensaje" rows="3"></textarea>
+    
+        <input type="submit" value="Enviar" class="btn-enviar" onclick="return Confirmacion()" >
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Contacto: <a href="mailto:oggaming.fresh420@gmail.com">oggaming.fresh420@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+1. Crear entorno virtual  (  python -m venv env  )
+
+2. Activar entorno virtual ( env/Scripts/activate )
+
+3. instalar flask ( pip install flask )
+
+4. Instalar pthyon mysql conector ( pip install mysql-connector-python )
+
+5. Crear/Actualizar el fichero ( pip freeze > requirements.txt )
+
+6. Ejecutar/Correr proyecto( pip install -r requirements.txt )
+
+
+
+ (env)$ deactivate    Para desactivar nuestro entono virtual
+
+Comando para actualizar pip: python -m pip install --upgrade pip
+
