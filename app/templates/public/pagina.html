@@ -13,9 +13,12 @@
 
     <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
 
-    <title></title>
+    <title>{% block Login %}{% endblock %}</title>
 </head>
 <body>
+    {% block body %} 
+    
+    {% endblock %}
     <h1 class="eslogan">¡El poder de la victoria está en tus manos con nuestros productos gaming!</h1>
     <p class="exp">Comienza tu experiencia con</p>
     <img class="img" src="{{ url_for('static',filename='imgs/flecha.png')}}" alt="Look down">

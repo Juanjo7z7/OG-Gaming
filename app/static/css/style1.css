@@ -64,12 +64,9 @@ nav {
   footer {
     background-color: #000000;
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding: 85px;
     position: end;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
+    height: 240px;
   }
   
   .container {
@@ -121,7 +118,7 @@ nav {
   
   input[type="submit"] {
     background-color: #e03e3e;
-    color: rgb(0, 0, 0);
+    color: aliceblue;
     border: none;
     border-radius: 8px;
     padding: 6px;
@@ -132,16 +129,29 @@ nav {
     margin: 0 auto;
   }
   
-  body {
-    background-color: #1e1e1e;
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee';
+    font-family: 'Labrada', serif;
+    font-family: 'Titan One' ;
   }
   
+  body {
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+  }
+
   .btn-enviar {
-    border-radius: 5px;
+    color:aliceblue;
+    border-radius: 10px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     cursor: pointer;
+    -webkit-text-stroke: 2px #000000;
   }
   
   .btn-enviar:hover {
@@ -169,8 +179,8 @@ nav {
   }
   
   .capa {
+    top: 50px;
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -182,7 +192,7 @@ nav {
     transition: .3s ease;
   }
   
-  .capa h2 {
+  .capa a {
     font-family: 'Bungee', cursive;
     font-family: 'Labrada', serif;
     font-family: 'Titan One', cursive;
@@ -195,8 +205,11 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 47px;
-    margin: 0;
+    margin: 300px, 300px;
     -webkit-text-stroke: 2px black;
+    cursor: pointer;
+    width: 300px;
+    height: 300px
   }
   
   .image:hover .capa {
@@ -240,4 +253,111 @@ nav {
     transition: 1.2s ease;
   }
   
+.CorreoContacto {
+  position: center;
+  bottom: 25px;
+  
+}
 
+.toast_alert {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+
+  /*animation: efectoBounce .3s ease infinite alternate; */
+}
+
+.toast_alert.active {
+  transform: translateX(0%);
+  display: block;
+}
+
+.toast_alert .toast_alert-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast_alert-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  background-color: #24bca6;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast_alert-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast_alert .close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 17px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+.toast_alert .close:hover {
+  background-color: #cecece;
+}
+
+.toast_alert .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast_alert .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #24bca6;
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+      right: 100%;
+  }
+}

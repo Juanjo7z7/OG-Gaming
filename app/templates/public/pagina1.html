@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
-  <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
-  <title>Mi Página Web</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Labrada:ital,wght@0,100;0,900;1,800&family=Titan+One&display=swap" rel="stylesheet">
-</head>
-<body>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
+<script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+<script src="{{ url_for('static',filename='js/custom_alert.js')}}"></script>
+{% block body %}
+ <div class="Alerta">
   
+  {% include 'public/alerts.html' %}
+ </div>
   <nav>
     <div class="navbar">
       <label for="" class="logo">
@@ -26,29 +20,29 @@
   </nav>
   <div class="image-container">
     <div class="image">
-      <a href="juegos.html"><img src="{{ url_for('static',filename='imgs/videojuegos.png')}}" alt="Videojuegos"></a>
+      <a onclick="juegos()"><img src="{{ url_for('static',filename='imgs/videojuegos.png')}}" alt="Videojuegos"></a>
       <div class="capa">
-      <h2><strong>Juegos</strong></h2>
+      <a onclick="juegos()"><strong>Juegos</strong></a>
     </div>
     </div>
     <div class="image">
-      <a href="Perifericos.html"><img src="{{ url_for('static',filename='imgs/perifericos.png')}}" alt="Perifericos"></a>
+      <a onclick="Perifericos()"><img src="{{ url_for('static',filename='imgs/perifericos.png')}}" alt="Perifericos"></a>
       <div class="capa">
-      <h2><strong>Perifericos</strong></h2>
+      <a onclick="Perifericos()"><strong>Perifericos</strong></a>
     </div>
     </div>
     
     <div class="image">
-      <a href="hardware.html"><img src="{{ url_for('static',filename='imgs/hardware.png')}}" alt="Hardware"></a>
+      <a onclick="Hardware()"><img src="{{ url_for('static',filename='imgs/hardware.png')}}" alt="Hardware"></a>
       <div class="capa">
-      <h2><strong>Hardware y Cables</strong></h2>
+      <a onclick="Hardware()"><strong>Hardware y Cables</strong></a>
     </div>
     </div>
     <div class="image">
-      <a href="sobrenos.html"><img src="{{ url_for('static',filename='imgs/quees.png')}}"  alt="¿Ques es OG Gaming?"></a>
+      <a onclick="sobre_nos()"><img src="{{ url_for('static',filename='imgs/quees.png')}}"  alt="¿Ques es OG Gaming?"></a>
       
       <div class="capa">
-      <h2><strong>Sobre nosotros</strong></h2>
+      <a onclick="sobre_nos()"></a><strong>Sobre nosotros</strong></a>
     </div>
     </div>
   </div>
@@ -73,5 +67,6 @@
     <p>Contacto: <a href="mailto:oggaming.fresh420@gmail.com">oggaming.fresh420@gmail.com</a></p>
   </footer>
 
-</body>
-</html>
+
+{% endblock %}
+
