@@ -73,12 +73,13 @@ nav {
 
 .contenido {
   position: center;
-  width: 500px;
-  margin: 40px\ auto;
+  width: 100%;
+  height: 100%;
   display: flex;
-  padding-top: 90px;
   margin-left: 730px;
   margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:2rem;
 }
 
 .ListaProductos {
@@ -90,16 +91,19 @@ nav {
 
 }
 
+/*Flex de la direccion H o V*/
 .ListaProductos .oferta {
-  display: flex;
+  display: grid;
   margin-bottom: 100px;
   justify-content: space-between 10px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:2rem;
 
 }
 
 .ListaProductos .oferta .producto {
   max-width: 210px;
-  padding: 30px;
+  padding: 3px 8px;
   height: 250px;
   text-align: center;
   margin: 0 10px;
@@ -154,7 +158,8 @@ background-color: #969696ad;
 
 .producto {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .foto-producto {
@@ -167,3 +172,8 @@ background-color: #969696ad;
   height: auto;
 }
 
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
