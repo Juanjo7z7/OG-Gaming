@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/catalogo_fun.js')}}"></script>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/Perifericos_Style.css')}}">
     <title>Document</title>
 </head>
@@ -23,69 +24,156 @@
         <a class="logo" href=""><img src="{{ url_for('static',filename='imgs/Logo.png')}}" alt="Logo"></a>
         </label>
     </nav>
-    <section class="Contenido">
-        <div class="ListaProductos">
-            <div class="oferta">
+    <div class="container">
 
+        <div class="products-container">
 <!-- Productos -->
 
-                <div class="producto">
-                                        <div class="foto-producto">
-                                            <img src="{{ url_for('static',filename='imgs/mouse.png')}}" alt="Productos">
-                                            <h3 class="NameProducto">Mouse Gaming</h3>
-                                            <p class="descripcion">Retroiluminación RGB dinámica, de dos zonas: experimenta docenas de preajustes y efectos personalizables para que coincida perfectamente con tu configuración.</p>                      
-                                            <span class="precio">$294.000/COP</span>                            
-                                        </div>    
-                    </div>  
-                <div class="producto">
-                                    <div class="foto-producto">
-                                        <img src="{{ url_for('static',filename='imgs/portatil.png')}}" alt="Productos">
-                                        <h3 class="NameProducto">Portatil Gamer</h3>
-                                        <p class="descripcion">ASUS ROG Strix G15 Portatil Gamer Ryzen 9 RTX 3070 16GB 1TB, NVIDIA GeForce RTX 3070 8GB GDDR6 con ROG Boost, 
-                                            ultimo procesador AMD Ryzen 9 5900HX de 5ª generacion (cache de 16 M, hasta 4.5 GHz), pantalla Full HD 300 Hz 3 ms de 15.6 pulgadas y 1920 x 1080 IPS, 16 GB DDR4 3200 MHz RAM | 1 TB PCIe NVMe M.2 SSD | Windows 10 Home, sistema termico de refrigeracion inteligente ROG con compuesto termico de metal liquido Grizzly.
-                                            </p>
-                                        <span class="precio">$13.854.000/COP</span>
-                                    </div>    
-                    </div>  
-                <div class="producto">
-                                    <div class="foto-producto">
-                                        <img src="{{ url_for('static',filename='imgs/audifonos.png')}}" alt="Productos">
-                                        <h3 class="NameProducto">Audifonos Gamer</h3>
-                                        <p class="descripcion">Auriculares con excelente compatibilidad: este auricular de juego con un conector de audio de 0.138 in es compatible con ps4,   
-                                            ps4 pro/slim, xbox one, xbox one s/x, pc, nintendo switch/3ds, psp, ps3, ordenador portátil, ordenador, tableta, ipad, teléfono móvil.</p>
-                                        <span class="precio">$94.000/COP</span>
-                                    </div>    
-                    </div>
-                <div class="producto">
-                                    <div class="foto-producto">
-                                        <img src="{{ url_for('static',filename='imgs/mouse_pad.png')}}" alt="Productos">
-                                        <h3 class="NameProducto">Mouse Pad Gamer</h3>
-                                        <p class="descripcion">Plug and play, no necesita ningún controlador
-                                            Un clic para cambiar el efecto de iluminación: 12 grupos de modos de iluminación RGB
-                                            Superficie de tela de malla fina de primera calidad, que permite que el mouse se mueva con suavidad y precisión
-                                            Alfombrilla de ratón con iluminación RGB con una base de goma antideslizante que evita que la alfombrilla de ratón se deslice</p>
-                                        <span class="precio">$84.900/COP</span>
-                                    </div>
-                    </div> 
-                <div class="producto"> 
-                                    <div class="foto-producto">
-                                        <img src="{{ url_for('static',filename='imgs/teclado.png')}}" alt="Productos">
-                                        <h3 class="NameProducto">Teclado RGB</h3>
-                                        <p class="descripcion">Retroiluminación del teclado7 colores
-                                            InterfazUSB
-                                            Teclas de función12
-                                            Tecla de pantalla de inicio de WindowsSÍ
-                                            Ciclo de vida de las pulsaciones de teclas2 millones
-                                            Longitud del cable1,5 m
-                                            Peso745g
-                                            Dimensiones (An. x Al. x Pr.)466 x 205 x 30 mm (18,35 x 8,07 x 1,18 pulgadas)</p>
-                                        <span class="precio">$152.000/COP</span>
-                                    </div>
-                    </div>        
-<!-- Fin Productos -->
-
-            </div>
+<div class="product" data-name="p-1">
+    <img src="{{ url_for('static',filename='imgs/mouse.png')}}" alt="Productos">
+    <h3> Mouse Gaming </h3>
+    <div class="price">$294.000/COP</div>
+</div>
+<div class="product" data-name="p-2">
+    <img src="{{ url_for('static',filename='imgs/portatil.png')}}" alt="Productos">
+    <h3>Portatil Gamer</h3>
+    <div class="price">$13.854.000/COP</div>
+</div>
+<div class="product" data-name="p-3">
+    <img src="{{ url_for('static',filename='imgs/audifonos.png')}}" alt="Productos">
+    <h3>Audifonos Gamer</h3>
+    <div class="price">$94.000/COP</div>
+</div>
+<div class="product" data-name="p-4">
+    <img src="{{ url_for('static',filename='imgs/mouse_pad.png')}}" alt="Productos">
+    <h3>Mouse Pad Gamer</h3>
+    <div class="price">$799.00</div>
+</div>
+<div class="product" data-name="p-5">
+    <img src="{{ url_for('static',filename='imgs/teclado.png')}}" alt="Productos">
+    <h3>Teclado RGB</h3>
+    <div class="price">$152.000/COP</div>
         </div>
-    </section>      
+    </div>
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-1">
+        <i class="fas fa-times"></i>
+        <img src="{{ url_for('static',filename='imgs/mouse.png')}}" alt="Productos">
+        <h3>Mouse Gaming </h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Retroiluminación RGB dinámica, de dos zonas: experimenta docenas de preajustes y 
+            efectos personalizables para que coincida perfectamente con tu configuración.</p>
+        <div class="price">$294.000/COP</div>
+        <div class="buttons">
+            <a href="#" class="buy">Comprar Ahora</a>
+            <a href="#" class="cart">Agregar Al Carrito</a>
+        </div>
+        </div>
+  
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="{{ url_for('static',filename='imgs/portatil.png')}}" alt="Productos">
+            <h3>Portatil Gamer</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>ASUS ROG Strix G15 Portatil Gamer Ryzen 9 RTX 3070 16GB 1TB, NVIDIA GeForce RTX 3070 8GB GDDR6 con ROG Boost, 
+                ultimo procesador AMD Ryzen 9 5900HX de 5ª generacion (cache de 16 M, hasta 4.5 GHz), pantalla Full HD 300 Hz 3 ms de 15.6 pulgadas y 1920 x 1080 IPS, 16 GB DDR4 3200 MHz RAM | 1 TB PCIe NVMe M.2 SSD | Windows 10 Home, sistema termico de refrigeracion inteligente ROG con compuesto termico de metal liquido Grizzly.
+                </p>
+            <div class="price">$13.854.000/COP</div>
+            <div class="buttons">
+                <a href="#" class="buy">Comprar Ahora</a>
+                <a href="#" class="cart">Agregar Al Carrito</a>
+            </div>
+            </div>
+  
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="{{ url_for('static',filename='imgs/audifonos.png')}}" alt="Productos">
+                <h3>Audifonos Gamer</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 250 )</span>
+                </div>
+                <p>Auriculares con excelente compatibilidad: este auricular de juego con un conector de audio de 0.138 in es compatible con ps4,   
+                    ps4 pro/slim, xbox one, xbox one s/x, pc, nintendo switch/3ds, psp, ps3, ordenador portátil, ordenador, tableta, ipad, teléfono móvil.</p>
+            </p>
+                
+                <div class="price">$94.000/COP</div>
+                <div class="buttons">
+                    <a href="#" class="buy">Comprar Ahora</a>
+                    <a href="#" class="cart">Agregar Al Carrito</a>
+                </div>
+                </div>
+  
+                <div class="preview" data-target="p-4">
+                    <i class="fas fa-times"></i>
+                    <img src="{{ url_for('static',filename='imgs/mouse_pad.png')}}" alt="Productos">
+                    <h3>Mouse Pad Gamer</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <p>Plug and play, no necesita ningún controlador
+                        Un clic para cambiar el efecto de iluminación: 12 grupos de modos de iluminación RGB
+                        Superficie de tela de malla fina de primera calidad, que permite que el mouse se mueva con suavidad y precisión
+                        Alfombrilla de ratón con iluminación RGB con una base de goma antideslizante que evita que la alfombrilla de ratón se deslice
+                    </p>
+                    <div class="price">$84.900/COP</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Comprar Ahora</a>
+                        <a href="#" class="cart">Agregar Al Carrito</a>
+                    </div>
+                    </div>
+  
+                    <div class="preview" data-target="p-5">
+                        <i class="fas fa-times"></i>
+                        <img src="{{ url_for('static',filename='imgs/teclado.png')}}" alt="Productos">
+                        <h3>Teclado RGB</h3>
+                        <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <p>Retroiluminación del teclado7 colores
+                            InterfazUSB
+                            Teclas de función12
+                            Tecla de pantalla de inicio de WindowsSÍ
+                            Ciclo de vida de las pulsaciones de teclas2 millones
+                            Longitud del cable1,5 m
+                            Peso745g
+                            Dimensiones (An. x Al. x Pr.)466 x 205 x 30 mm (18,35 x 8,07 x 1,18 pulgadas)</p>
+                    </p>
+                    <div class="price">$152.000/COP</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Comprar Ahora</a>
+                        <a href="#" class="cart">Agregar Al Carrito</a>
+                    </div>
+                    </div>
+
 </body>
 </html>
