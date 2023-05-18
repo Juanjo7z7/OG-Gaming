@@ -1,29 +1,11 @@
-const toast = document.querySelector(".toast_alert");
-(closeIcon = document.querySelector(".close")),
-(progress = document.querySelector(".progress"));
+// Obtener el elemento de cierre
+var closeButton = document.querySelector('.toast_alert .close');
 
-let timer1, timer2;
+// Obtener el elemento de notificación
+var toastAlert = document.querySelector('.toast_alert');
 
-/***Validando que no muestre error cuando esta clase 'close' no exista  */
-if(closeIcon !=null){
-  
-  timer1 = setTimeout(() => {
-    toast.classList.remove("active");
-  }, 10000); //1s = 1000 milliseconds
-
-  timer2 = setTimeout(() => {
-    progress.classList.remove("active");
-  }, 5300);
-
-
-  closeIcon.addEventListener("click", () => {
-    toast.classList.remove("active");
-
-    setTimeout(() => {
-      progress.classList.remove("active");
-    }, 300);
-
-    clearTimeout(timer1);
-    clearTimeout(timer2);
-  });
-}
+// Agregar un evento de clic al botón de cierre
+closeButton.addEventListener('click', function() {
+  // Ocultar la notificación al hacer clic en el botón de cierre
+  toastAlert.style.display = 'none';
+});
